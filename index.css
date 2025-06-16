@@ -2,6 +2,7 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 body {
   display: grid;
@@ -9,25 +10,41 @@ body {
   justify-items: center;
 }
 #content {
-  background-color: aqua;
+  background-color: bisque;
   min-width: 80vw;
   justify-items: center;
 }
+
 body > div {
   height: 100vh;
 }
-#sideBar {
-  min-width: 10vw;
+
+.buttonArea {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
-#content > * {
-  border: 1px solid;
+.buttonArea > button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
 }
 .gridDiv {
-  border: 1px solid;
-  /* min-height: calc(100% / 3); */
-  /* min-width: ; */
+  border: 0.5px solid rgb(212, 211, 211);
 }
 
 .drawGrid {
   flex-wrap: wrap;
+}
+
+#leftBar > * {
+  border: 0.5px solid rgb(212, 211, 211);
+}
+
+#leftBar,
+#rightBar {
+  min-width: 10vw;
+  min-height: 100vh;
 }
