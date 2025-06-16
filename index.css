@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+#content {
+  background-color: aqua;
+  min-width: 80vw;
+  justify-items: center;
+}
+body > div {
+  height: 100vh;
+}
+#sideBar {
+  min-width: 10vw;
+}
+#content > * {
+  border: 1px solid;
+}
+.gridDiv {
+  border: 1px solid;
+  /* min-height: calc(100% / 3); */
+  /* min-width: ; */
+}
+
+.drawGrid {
+  flex-wrap: wrap;
+}
